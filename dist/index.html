@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Firebase 9</title>
+    </head>
+    <body>
+        <h1>Getting Started with firebase 9.</h1>
+        <h2>Firebase Firestore</h2>
+        <form action="" class="add">
+            <label for="title">Title:
+            </label>
+            <input type="text" name="title" required>
+            <label for="author">Author:
+            </label>
+            <input type="text" name="author" required>
+            <button>Add a new Book</button>
+        </form>
+        <hr/>
+
+        <h2>Existing Books</h2>
+        <ul class="existing-books"></ul>
+
+        <hr/>
+        <h2>Query Data</h2>
+        <ul class="query-data"></ul>
+
+        <hr/>
+        <form class="delete">
+            <label for="id">Document Id:</label>
+            <input type="text" name="id" required>
+            <button>Delete</button>
+        </form>
+        <hr/>
+
+
+        <form class="update">
+            <h2>Caption</h2>
+            <label for="id">Id:
+            </label>
+            <input type="text" name="id" required/>
+            <br>
+            <label for="title">Title:
+            </label>
+            <input type="text" name="title"/><br>
+            <label for="author">Author:
+            </label>
+            <input name="author" type="text"/>
+            <button>Update</button>
+
+        </form>
+
+        <form class="auth">
+            <h2>Auth - Signup</h2>
+            <label for="email">Email:
+            </label>
+            <input type="email" name="email" required/><br>
+            <label for="password">Password:
+            </label>
+            <input type="password" name="password" required/>
+            <button>SignUp</button>
+        </form>
+
+        <hr>
+        <h2>Login Form</h2>
+        <form class="login">
+            <label for="email">Email:
+            </label>
+            <input name="email" type="email" required/>
+            <br>
+            <label for="password">Password:
+            </label>
+            <input name="password" type="password" required/>
+            <button>Login</button>
+        </form>
+
+        <hr>
+        <h2>Logout Form</h2>
+        <form class="logout">
+            <button>LogOut</button>
+        </form>
+
+        <h2>Unsubscribing</h2>
+        <button class="unsub">Unsubscribe from db/auth changes</button>
+
+        <script src="bundle.js"></script>
+    </body>
+</html>
